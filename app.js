@@ -24,4 +24,4 @@ mongoose.connect(process.env.MONGO_D_KEY, {useNewUrlParser: true, useUnifiedTopo
     console.log("you did it!")
 })
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 4000)
