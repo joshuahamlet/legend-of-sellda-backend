@@ -28,6 +28,7 @@ router.post('/register', async (req,res) => {
         res.header('auth-token', token).send({
         name: savedUser.name,
         email: savedUser.email,
+        isAdmin: savedUser.isAdmin,
         token: token
         })
     } catch (err) {
@@ -50,6 +51,7 @@ router.post('/login', async (req,res) => {
     res.header('auth-token', token).send({
         name: user.name,
         email: user.email,
+        isAdmin: user.isAdmin,
         token: token
     })
 
